@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Las Hotel</h1>
+
+      <form>
+        <!-- Check In Section -->
+        <fieldset class="check-in">
+          <legend>Check In</legend>
+          
+          <label for="full-name">
+            <p>Enter the Name</p>
+            <input type="text" id="full-name" placeholder="Full Name" required />
+          </label>
+
+          <label for="age">
+            <p>Enter the Age</p>
+            <input type="number" id="age" placeholder="Age" required />
+          </label>
+
+          <label for="address">
+            <p>Address</p>
+            <textarea id="address" rows="4" cols="30" placeholder="Address" required></textarea>
+          </label>
+
+          <label for="num-customers">
+            <p>Number of Customers</p>
+            <input type="number" id="num-customers" placeholder="Number of customers" required />
+          </label>
+
+          <label for="check-in-date">
+            <p>Date and Time of Check In</p>
+            <input type="date" id="check-in-date" required />
+            <input type="time" id="check-in-time" required />
+          </label>
+        </fieldset>
+
+        <!-- Check Out Section -->
+        <fieldset class="check-out">
+          <legend>Check Out</legend>
+          
+          <label for="person-name">
+            <p>Name of the Person</p>
+            <input type="text" id="person-name" placeholder="Name" required />
+          </label>
+
+          <label for="check-out-date">
+            <p>Date and Time of Check Out</p>
+            <input type="date" id="check-out-date" required />
+            <input type="time" id="check-out-time" required />
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
